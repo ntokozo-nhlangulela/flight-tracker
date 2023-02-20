@@ -24,7 +24,6 @@ body {
   height: 100%;
   display: flex;
   position: fixed;
-  /* flex-direction: column; */
 }
 .map-container {
   width: 100%;
@@ -36,7 +35,7 @@ body {
 .left-side {
   width: 30%;
   align-items: center;
-  padding: 2rem 0 1rem; /* top, l&r, bottom */
+  padding: 2rem 0 1rem;
   overflow: scroll;
 }
 
@@ -58,7 +57,6 @@ body {
   width: 100vw;
 }
 
-/* to change naming  */
 #flight-list {
   font-family: Arial, Helvetica, sans-serif;
   border-collapse: collapse;
