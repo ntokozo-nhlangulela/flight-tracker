@@ -15,7 +15,7 @@ for (let i = 0; i < 20; i++) {
   //listContainer.innerHTML += `<div><p>${backup.states[i][1]}</p><p>${backup.states[i][2]}</p><p></p></div>`;
   let coordinates = {
     lat: 0,
-    long: 0,
+    long: 1,
   };
   const flightCard = document.createElement("tr");
   const flightCallSign = document.createElement("td");
