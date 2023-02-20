@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+    integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
+  <link rel="stylesheet" href="./src/css/style.css">
+  <title>Flight Tracker</title>
+</head>
+
+<body>
+  <div class="header">
+    <img class="logo" src="./src/assets/plane.svg" alt="" />
+    <h1>Flight Tracker</h1>
+    <div class="social media "></div>
+  </div>
+  <main class="container">
+    <div class="left-side">
+      <h1>Flight List</h1>
+
+      <table id="flight-list">
+        <tr>
+          <th>Flight Code</th>
+          <th>Country</th>
+        </tr>
+
+      </table>
+    </div>
+
+    <div class="right-side">
+
+      <div id="map"></div>
+
+    </div>
+  </main>
+  <script type="module" src="api.js">
+  </script>
+  <script type="module" src="./main.js"></script>
+</body>
+
+</html>
+
+<script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+  integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin="">
+
+  </script>
