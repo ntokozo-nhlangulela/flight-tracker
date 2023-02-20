@@ -15,22 +15,25 @@ for (let i = 0; i < 20; i++) {
   //listContainer.innerHTML += `<div><p>${backup.states[i][1]}</p><p>${backup.states[i][2]}</p><p></p></div>`;
   let coordinates = {
     lat: 0,
-    long: 1,
+    long: 0,
   };
-  const flightCard = document.createElement("tr");
-  const flightCallSign = document.createElement("td");
-  flightCallSign.innerText = backup.states[i][1];
-  const flightCallSign2 = document.createElement("td");
-  flightCallSign2.innerText = backup.states[i][2];
+  const flightTable = document.createElement("tr");
+  const flightTableData = document.createElement("td");
+  flightTableData.innerText = backup.states[i][1];
+  const flightTableData2 = document.createElement("td");
+  flightTableData2.innerText = backup.states[i][2];
+  const flightTableData3 = document.createElement("td");
+  flightTableData3.innerText = backup.states[i][9];
 
-  flightCard.appendChild(flightCallSign);
-  flightCard.appendChild(flightCallSign2);
-  flightCard.className = "flex-item";
+  flightTable.appendChild(flightTableData);
+  flightTable.appendChild(flightTableData2);
+  flightTable.appendChild(flightTableData3);
+  flightTable.className = "flex-item";
 
-  listContainer.appendChild(flightCard);
+  listContainer.appendChild(flightTable);
   coordinates.lat = backup.states[i][5];
   coordinates.long = backup.states[i][6];
-  flightCard.addEventListener("click", () => flightHandler(coordinates));
+  flightTable.addEventListener("click", () => flightHandler(coordinates));
 }
 
 // var leafLetIcon = L.icon({
