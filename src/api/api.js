@@ -19,7 +19,7 @@
 //   });
 
 export async function flightApiCall() {
-  //const flightApi = "https://opensky-network.org/api/states/all";
+  const flightApi = "https://opensky-network.org/api/states/all";
   const flights = await fetch(flightApi)
     .then((response) => response.json())
     .then((data) => {
